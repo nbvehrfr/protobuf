@@ -15,7 +15,7 @@ module Protobuf
       #
 
       def decode(bytes)
-#        bytes_to_decode = bytes.dup
+        bytes_to_decode = bytes.dup
         bytes_to_decode.force_encoding(::Protobuf::Field::StringField::ENCODING)
         bytes_to_decode
       end
